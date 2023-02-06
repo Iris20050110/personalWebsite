@@ -1,0 +1,130 @@
+@media only screen and (max-width: 768px) {
+    h1, h2 {
+    font-family: 'Abril Fatface', serif;
+}
+
+    p {
+    font-family: Poppins, sans-serif;
+}
+    .heading {
+    margin-top: 0;
+    border-bottom: 5px solid #466995;
+    margin-bottom:1.5%;
+    width: 100%;
+    display: block;
+    color: #466995;
+    background-color: white;
+    opacity: 1;
+    padding: 0;
+    font-family: 'Abril Fatface', serif;
+    font-size: 20px;
+    font-style: italic;
+    text-indent: 6%;
+    text-align: center;
+}
+
+header {
+    background-color: #f9f9f9;
+    opacity: 1;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.tab button {
+    width: 20%;
+    height: 20%;
+    display: inline-block;
+    margin-top: 1%;
+    float: left;
+    border: none;
+    background-color: none;
+    font-family: Poppins, serif;
+}
+
+.tab h1 {
+    float: left;
+    display: inline-block;
+    width: 60%;
+    text-align: center;
+    margin: 0 0 0 3%;
+    padding: 0;
+    font-size: 22px;
+}
+
+.tab p {
+    position: absolute;
+    top: 85%;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+img {
+	width: 100%;
+}
+}
+
+
+@media only screen and (min-width: 768px) {
+    h1, h2 {
+    font-family: 'Abril Fatface', serif;
+}
+
+    p {
+    font-family: Poppins, sans-serif;
+}
+    .heading {
+    margin-top: 0;
+    border-bottom: 5px solid #466995;
+    margin-bottom:1.5%;
+    width: 100%;
+    display: block;
+    color: #466995;
+    background-color: white;
+    opacity: 1;
+    padding: 0;
+    font-family: 'Abril Fatface', serif;
+    font-size: 20px;
+    font-style: italic;
+    text-indent: 6%;
+    text-align: left;
+}
+
+header {
+    background-color: #f9f9f9;
+    opacity: 1;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.tab button {
+    width: 10%;
+    background: transparent;
+    display: inline-block;
+    float: left;
+    border: none;
+    background-color: none;
+    font-size: 18px;
+    font-family: Poppins, serif;
+}
+
+.tab h1 {
+    float: left;
+    display: inline-block;
+    width: 60%;
+    text-align: center;
+    margin: 0 0 2% 10%;
+    padding: 0;
+    font-size: 28px;
+    font-feature-settings: frac;
+    font-variant-numeric: diagonal-fractions;
+}
+
+.tab p {
+    position: absolute;
+    top: 85%;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+}

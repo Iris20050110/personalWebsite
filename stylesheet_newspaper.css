@@ -1,0 +1,322 @@
+﻿ /* For mobile phone: */
+ @media only screen and (max-width: 768px)  {
+   h1, h3, h4 {
+    font-family: 'Abril Fatface', serif;
+}
+
+    p, li {
+    font-family: Poppins, sans-serif;
+}
+    .heading {
+    border-bottom: 5px solid #466995;
+    margin-bottom:1.5%;
+    width: 100%;
+    display: block;
+    color: #466995;
+    background-color: white;
+    opacity: 1;
+    padding: 0;
+    font-family: 'Abril Fatface', serif;
+    font-size: 22px;
+    font-style: italic;
+    text-indent: 6%;
+    text-align: center;
+}
+
+.multi-artcle {
+    padding-left: 0;
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    float: left;
+}
+
+.multi-article p {
+    text-align: left;
+    font-size: 17px;
+}
+
+.multi-article h1 {
+    font-size: 35px;
+}
+
+ .multi-article h3, h4 {
+    font-size: 20px;
+}
+
+.tab {
+    top: 15%;
+    bottom: 0;
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+.tab a {
+    text-decoration: none;
+}
+
+.tab button {
+    float: left;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    width: 20%;
+    height: 20%;
+    color: white;
+    background-color:#466995;
+    border: 1px solid white;
+    font-family: Poppins, serif;
+  }
+
+.tab .dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    margin-top: 6%;
+    text-align: center;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+  .images img {
+      width: 100%;
+      height: auto;
+}
+
+#image0 {
+    border: 1px solid;
+    padding-top: 30%;
+    position: relative;
+}
+
+#image1 {
+    padding-top: 10%;
+    position: relative;
+}
+
+#image2 {
+    padding-top: 4%;
+}
+
+#image3 {
+    padding-top: 10%;
+    height: 15%;
+}
+
+#image4 {
+    padding-top: 4%;
+    height: 27%;
+}
+
+#image5 {
+    padding-top: 4%;
+    height: 33%;
+}
+
+#image6 {
+    padding-top: 10%;
+    width: 30%;
+    height: auto;
+}
+
+#image7, #image8 {
+   padding-top: 10%;
+   padding-left: 0;
+   width: 30%;
+   height: auto;
+}
+
+#image9 {
+     padding-top: 4%;
+}
+
+div .desc {
+    width: 100%;
+    margin-right: 2%;
+    font-size: 14px;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+}
+ }
+
+
+
+  @media only screen and (min-width: 768px) {
+h1, h3, h4 {
+    font-family: 'Abril Fatface', serif;
+}
+
+p, li {
+    font-family: Poppins, sans-serif;
+}
+
+.heading {
+    border-bottom: 5px solid #466995;
+    margin-bottom:1.5%;
+    width: 100%;
+    display: block;
+    color: #466995;
+    background-color: white;
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+    font-family: 'Abril Fatface', serif;
+    font-size: 22px;
+    font-style: italic;
+    text-indent: 6%;
+    position: fixed;
+    z-index: 5;
+}
+
+.multi-article {
+    margin-top: 5%;
+    padding-left: 25%;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    width: 45%;
+}
+
+.multi-article p {
+    text-align: left;
+    font-size: 17px;
+}
+
+.multi-article h1 {
+    font-size: 35px;
+}
+
+ .multi-article h3, h4 {
+    font-size: 20px;
+}
+.desc {
+    position: absolute;
+    float: right;
+    width: 25%;
+    padding-right: 3%;
+    font-size: 14px;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    right: 0;
+}
+
+
+.multi-article .images img {
+      width: 25%;
+      padding-right: 3%;
+      position: absolute;
+      float: right;
+      right: 0;
+}
+
+#image0 {
+    border: 1px solid;
+    top: 25%;
+}
+
+#image1 {
+    top: 200%;
+}
+
+#desc1{
+    top: 240%;
+}
+
+#image2 {
+    top: 120%;
+}
+
+#desc2 {
+    top: 153%;
+}
+
+#image3 {
+    top: 385%;
+    height: auto;
+}
+
+#image4 {
+    top: 440%;
+    height: auto;
+}
+
+#desc4 {
+    top: 495%;
+}
+
+#image5 {
+    top: 510%;
+    height: auto;
+}
+
+#desc5 {
+    top: 570%;
+}
+
+#image6 {
+    top: 620%;
+    width: 8%;
+    right: 18%;
+    height: auto;
+}
+
+#image7 {
+    top: 620%;
+    width: 8%;
+    right: 9%;
+   height: auto;
+}
+
+
+#image8 {
+    top: 620%;
+   width: 8%;
+   height: auto;
+}
+
+#image9 {
+    top: 650%;
+
+}
+
+#desc9 {
+    top: 693%;
+}
+
+.tab {
+    top: 8%;
+    bottom: 0;
+    float: left;
+    width: 20%;
+	height: 90%;
+	background-color:#466995;
+    position: fixed;
+}
+
+.tab a {
+    text-decoration: none;
+}
+
+.tab button {
+    display: block;
+    padding: 8% 2%;
+    width: 100%;
+    background-color:#466995;
+    font-size: 15px;
+    border: none;
+    color: white;
+    border-bottom: 1px solid white;
+    font-family: Poppins, serif;
+  }
+
+.dropdown-content {
+    display: none;
+}
+
+}

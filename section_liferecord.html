@@ -1,0 +1,286 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='keywords' content='Iris Li, Website'>
+    <meta name='description' content="Iris Li's Website about Herself">
+    <meta name='author' content='Iris Yushan Li'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+    <link rel="stylesheet" href="file:///C:/Users/jiang/Desktop/Website/stylesheet_liferecord.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link rel="icon" type="image/x-icon"
+    href="C:\Users\jiang\Desktop\Website\index\large_user5492897_3826049_20.ico.jpg" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Iris Li's Life Record</title>
+
+</head>
+
+<body>
+   <header>
+       <p class='heading'>Iris Yushan Li</p>
+
+       <div class='tab'>
+        <a href='file:///C:/Users/jiang/Desktop/Website/website_index.html'><button>
+        <i class='fa fa-home'></i> <span></span>Home
+        </button></a>
+
+        <h1>My Blog</h1>
+        <p></p>
+       </div>
+   
+   <!-- navigation bar -->
+   <div class='navigation' id='btnContainer'>
+		<button class='dropbtn' id='cook' onclick='filterSelection("cooking")'>Cooking</button>
+		<button class='dropbtn' id='friends' onclick='filterSelection("traveling")'>Traveling</button>
+		<button class='dropbtn active' id='travel' onclick='filterSelection("all")'>Show All</button>
+   </div>
+   </header>
+   
+<script> 
+   filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    AddClass(x[i], "none");
+    if (x[i].className.indexOf(c) > -1) RemoveClass(x[i], "none");
+  }
+}
+
+// Show filtered elements
+function AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("btnContainer");
+var btns = btnContainer.getElementsByClassName("dropbtn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+   <div class='life-record'>
+       <div class='two'>
+        <article id='01152022'>
+		<div class='filterDiv traveling'>
+            <h1><sup>1</sup> / <sub>15</sub><sub class='year'>, 2022</sub></h1>
+            <h2>My first Christmas and New Year in America!</h2>
+            <p>This was my first New Year spent in America! I'd never seen such a heavy snow in the 16 years
+            of my life before...but I had sooo much fun now! Here should play Jingle Bell as the bgm :D
+            <br> ps: the winter Olympic is coming...I'm so excited.</p>
+            <video controls>
+                <source src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_01152022.mp4" type="video/mp4" />
+            </video>
+		</article>
+		</div>
+        
+
+        <article id='12232021'>
+			<div class='filterDiv traveling'>
+            <h1><sup>12</sup> / <sub>23</sub><sub class='year'>, 2021</sub></h1>
+           <h2>Winter Break at the 17 Miles Beach!</h2>
+           <p>I LOVE CA's weather forever!!!
+           <br>If the sea is a convas, then the splashing waves would be its brush,
+            and the clear sky would be its mirror. Could the seagulls recognize themselves when they looked down
+            to the water?</p>
+
+            <img class="OriginalImage" src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_12232021_1.jpg" alt="The Mysterious House 1">
+           <img class="OriginalImage" src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_12232021_2.jpg" alt="The Mysterious House 2" />
+           <img class="OriginalImage" src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_12232021_3.jpg" alt="A seagull flying above the sea" />
+           <img class="OriginalImage" src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_12232021_4.jpg" alt="The Lone Cypress" />
+		   </article>
+		   
+		   <div class='container'>
+           <img src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_12232021_3.jpg" alt="A seagull flying above the sea"
+           onclick='enlargeImg()' class='EnlargeImage'/>   <span class="close">&times;</span></div>
+		   
+		   <div class='container'>
+		   <img src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_12232021_2.jpg" alt="The Mysterious House 2"
+           onclick='enlargeImg()' class='EnlargeImage'/>  <span class="close">&times;</span></div>
+		   
+		   <div class='container'>
+		   <img src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_12232021_1.jpg" alt="The Mysterious House 1"
+           onclick='enlargeImg()' class='EnlargeImage'/> <span class="close">&times;</span></div>
+
+           <div class='container'>
+           <img src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_12232021_4.jpg" alt="The Lone Cypress"
+           onclick='enlargeImg()' class='EnlargeImage'/>  <span class="close">&times;</span></div>
+		 </div>
+        </div>
+
+        <div class='two'>
+           <article id='01292022'>
+		   <div class='filterDiv cooking'>
+            <h1><sup>1</sup> / <sub>29</sub><sub class='year'>, 2022</sub></h1>
+            <h2>Chinese New Year at Saint James!</h2>
+            <p>Happy Chinese New Year!
+            <br>A wonderful night with my friends!</p>
+			
+            <img class="OriginalImage" id='img01292022'src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_01292022.jpg" alt="The Chinese New Year Party" />
+		   </article>
+		   
+		   <div class='container'>
+           <img src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_01292022.jpg" alt="The Chinese New Year Party"
+           onclick='enlargeImg()' class='EnlargeImage'/>  <span class="close">&times;</span></div>
+		   </div>
+			
+           <article id='01302022'>
+		   <div class='filterDiv cooking'>
+              <h1><sup>1</sup> / <sub>30</sub><sub class='year'>, 2022</sub></h1>
+            <h2>Maybe Try to Cook?</h2>
+            <p>I tried to cook omelet rice using ONLY the microwave in my dorm.
+            The rice mixed with ketchup, tomato, and sausage tasted unexpectedly good though the omelet looked
+            a little bit bland...
+            <br>But it's never a bad thing to try to cook (or maybe more like an explosive experiment for me???)</p>
+            <img class="OriginalImage" src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_01302022_1.jpg"
+            alt="Omelet Rice" />
+			<img class="OriginalImage" src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_01302022_2.jpg"
+            alt="Omelet Rice" />
+			<img class="OriginalImage" src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_01302022_3.jpg"
+            alt="Omelet Rice" />
+			<img class="OriginalImage" src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_01302022_4.jpg"
+            alt="Omelet Rice" />
+			</article>
+			
+           <div class='container'>
+           <img src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_01302022_1.jpg" alt="Omelet Ricey"
+           onclick='enlargeImg()' class='EnlargeImage'/>  <span class="close">&times;</span></div>
+
+           <div class='container'>
+           <img src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_01302022_2.jpg" alt="Omelet Ricey"
+           onclick='enlargeImg()' class='EnlargeImage'/>  <span class="close">&times;</span></div>
+
+           <div class='container'>
+           <img src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_01302022_3.jpg" alt="Omelet Ricey"
+           onclick='enlargeImg()' class='EnlargeImage'/>  <span class="close">&times;</span></div>
+
+           <div class='container'>
+           <img src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_01302022_4.jpg" alt="Omelet Ricey"
+           onclick='enlargeImg()' class='EnlargeImage'/>  <span class="close">&times;</span></div>
+		   </div>
+        </div>
+			
+        <div class='two'>
+         <article id='03302022'>
+		 <div class='filterDiv cooking'>
+              <h1><sup>3</sup> / <sub>30</sub><sub class='year'>, 2022</sub></h1>
+            <h2>Another Easy Breakfast Recipe!</h2>
+            <p>I figured out an easy way to make banana pie!!
+            <br>This idea came from the time when I stuck in my dorm and had online classes.
+            The school refectory had almost nothing to eat because almost nobody had came back
+            to campus. I brought some bananas and pieces of toasts from the refectory to the dorm.
+            Cut the bananas into slices, mash them, and then put them into the toasts.
+            A little tip was to make several small cuts on the toasts, so that it was easier
+            to heat the mashed banana inside. Heat it in the microwave for 60 seconds!
+            <br>The picture looks a little messy...BUT it tasted Good! I loved the wonderful
+            smelling of bananas burrowing out of the toasts! </p>
+            <img class="OriginalImage" id='img03302022'src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_03302022_1.jpg"
+            alt="Banana pie" />
+			<img class="OriginalImage" src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_03302022_2.jpg"
+            alt="Banana pie" />
+			</article>
+           <div class='container'>
+           <img src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_03302022_1.jpg" alt="Banana pie"
+           onclick='enlargeImg()' class='EnlargeImage'/>  <span class="close">&times;</span></div>
+		   
+           <div class='container'>
+           <img src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_03302022_2.jpg" alt="Banana pie"
+           onclick='enlargeImg()' class='EnlargeImage'/>  <span class="close">&times;</span></div>
+		   </div>
+		 
+		 <article id='06072022'>
+		 <div class='filterDiv cooking'>
+			<h1><sup>6</sup> / <sub>7</sub><sub class='year'>, 2022</sub></h1>
+            <h2>Omelette</h2>
+			<p>The summer is coming! <br>This is the omelette I made for dinner.
+			I tried to cut the broccoli and tomatos in small pieces, but it seems that it was
+			not so successful <i class="fa fa-frown-o"></i>.
+			Anyway, it was still tasty <i class="fa fa-smile-o"></i>!</p>	
+			<img class="OriginalImage" src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_06072022_4.jpg"
+            alt="Omelette" />
+			<img class="OriginalImage" src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_06072022_1.jpg"
+            alt="Omelette" />
+			<img class="OriginalImage" src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_06072022_3.jpg"
+            alt="Omelette" />
+			<img class="OriginalImage" src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_06072022_2.jpg"
+            alt="Omelette" />
+			</article>
+			<div class='container'>
+           <img src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_03302022_4.jpg" alt="Omelette"
+           onclick='enlargeImg()' class='EnlargeImage'/>  <span class="close">&times;</span></div>
+		 </div>
+           <div class='container'>
+           <img src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_03302022_1.jpg" alt="Omelette"
+           onclick='enlargeImg()' class='EnlargeImage'/>  <span class="close">&times;</span></div>
+		 </div>
+		 <div class='container'>
+           <img src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_03302022_3.jpg" alt="Omelette"
+           onclick='enlargeImg()' class='EnlargeImage'/>  <span class="close">&times;</span></div>
+		 </div>
+		 <div class='container'>
+           <img src="C:\Users\jiang\Desktop\Website\liferecord\liferecord_03302022_2.jpg" alt="Omelette"
+           onclick='enlargeImg()' class='EnlargeImage'/>  <span class="close">&times;</span></div>
+		 </div>
+        </div>
+
+       <script>
+var modal = document.getElementsByClassName("container");
+var img = document.getElementsByClassName("OriginalImage");
+var modalImg = document.getElementsByClassName("EnlargeImage");
+for(let i = 0; i < img.length; i++) {
+  img[i].onclick = function(){
+      for (let x = 0; x < modal.length; x++) {
+  modal[i].style.display = "block";
+  modalImg[i].style.width = '80%';
+  modalImg[i].style.height = 'auto';
+  modalImg[i].src = this.src;   }
+}    }
+
+// close pictures
+var span = document.getElementsByClassName("close");
+
+// When the user clicks on <span> (x), close the modal
+for(let y = 0; y < span.length; y++) {
+span[y].onclick = function() {
+  for(let z = 0; z < modal.length; z++) {
+  modal[z].style.display = "none";  }
+}    }
+</script>
+   </div>
+
+</body>
+
+</html>

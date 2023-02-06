@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='keywords' content='Iris Li, Website'>
+    <meta name='description' content="Iris Li's Website about Herself">
+    <meta name='author' content='Iris Yushan Li'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+    <link rel="stylesheet" href="file:///C:/Users/jiang/Desktop/Website/stylesheet_engineering.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link rel="icon" type="image/x-icon" href="C:\Users\jiang\Desktop\Website\large_user5492897_3826049_20.ico" >
+    <title>Iris Li in Engineering Class</title>
+
+</head>
+
+<body>
+	<header>
+    <!-- heading -->
+    <p class='heading'>Iris Yushan Li</p>
+
+    <div class='tab'>
+    <div class='dropdown'>
+    <a href='file:///C:/Users/jiang/Desktop/Website/website_index.html'><button>
+        <i class='fa fa-home'></i> <span></span>Home
+    </button></a>
+    <div class="dropdown-content">
+       <p>Home</p>
+    </div>
+    </div>
+
+    <div class='dropdown'>
+    <a href='file:///C:/Users/jiang/Desktop/Website/section_class_engineering.html#article1'>
+    <button>Rocket</button>
+    </a>
+    <div class="dropdown-content">
+    <p>Rocket</p>
+    </div>
+    </div>
+
+
+    <div class='dropdown'>
+    <a href='file:///C:/Users/jiang/Desktop/Website/section_class_engineering.html#article2'>
+    <button>Bridge</button></a>
+    <div class="dropdown-content">
+       <p>Bridge</p>
+    </div>
+    </div>
+
+    <div class='dropdown'>
+    <a href='file:///C:/Users/jiang/Desktop/Website/section_class_engineering.html#article2'>
+    <button>Airplane</button></a>
+    <div class="dropdown-content">
+       <p>Airplane</p>
+    </div>
+    </div>
+
+    </div>
+</header>
+
+<!-- content -->
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+
+  slides[slideIndex-1].style.display = "block";
+}
+</script>
+   <div class='multi-article'>
+    <h1>Engineering and Design Class</h1>
+    <div class='articles'>
+        <article id='intro'>
+		<br><p>fun project! blablablablablabla</p>
+		</article>
+	</div>
+	
+	<div class='articles' id='article1'>
+         <br>
+		 <h3 id='title_rocket'>Make a Rocket!</h3>
+			 
+<div class="container">
+  <div class="slides">
+    <div class="numbertext">1 / 5</div>
+    <img src="C:\Users\jiang\Desktop\Website\class_engineering\engineering_rocket1.png" alt='Design Freeform fins'>
+	<div class="caption"><p>Design Freeform fins</p></div>
+	</div>
+  
+
+  <div class="slides">
+    <div class="numbertext">2 / 5</div>
+    <img src="C:\Users\jiang\Desktop\Website\class_engineering\engineering_rocket2.png" alt='Decide the number of elliptical fins'>
+	<div class="caption"><p>Decide the number of elliptical fins</p></div>
+	</div>
+  
+
+  <div class="slides">
+    <div class="numbertext">3 / 5</div>
+    <img src="C:\Users\jiang\Desktop\Website\class_engineering\engineering_rocket3.jpg" alt='Body tube'>
+	<div class="caption"><p>Body tube</p></div>
+	</div>
+  
+
+  <div class="slides">
+    <div class="numbertext">4 / 5</div>
+    <img src="C:\Users\jiang\Desktop\Website\class_engineering\engineering_rocket4.jpg" alt='Parachute'>
+	<div class="caption"><p>Parachute</p></div>
+	</div>
+  
+
+ <div class="slides">
+    <div class="numbertext">5 / 5</div>
+    <video controls>
+			<source src="C:\Users\jiang\Desktop\Website\index\intro_classes.mp4" type="video/mp4" />
+	</video>
+	<div class="caption"><p>Decide the number of elliptical fins</p></div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+</script>
+		<article>
+			 <p><br>&nbsp &nbsp The key of making a rocket was to design its fins. Using rocket design app, 
+			 my partner and I first modeled different shapes of fins and the number of fins. Through test, we 
+			 found that four elliptical fins would make the rocket fly the highest. Then, we used threads, 
+			 elastic bands, and plastic bags to make a simple parachute.
+			 <br>&nbsp &nbsp It was a sunny breezy day when we were finally going to test our rocket! Although 
+			 the parachute failed to open in the air, our rocket's height and stability were good. After calculating, 
+			 our maximum height was 287 feet. After reflection, we thought that the parachute did not successfully 
+			 open because the threads tangled together in the rocket tube and it took too long to unravel the threads 
+			 in the air.</p>
+		</article>
+	</div>
+	
+	<div class='articles' id='article2'>
+		<br>
+		<h3>Crush a Bridge!</h3>
+		
+	<div class="container">
+  <div class="bridge_slides">
+    <div class="bridge_numbertext">1 / 5</div>
+    <img src="C:\Users\jiang\Desktop\Website\class_engineering\engineering_bridge1.png" alt='Building the bridge'>
+	<div class="caption"><p>Building the bridge</p></div>
+	</div>
+  
+
+  <div class="bridge_slides">
+    <div class="bridge_numbertext">2 / 5</div>
+    <img src="C:\Users\jiang\Desktop\Website\class_engineering\engineering_bridge2.jpg" alt='Put loads on the bridge'>
+	<div class="caption"><p>Put loads on the bridge</p></div>
+	</div>
+  
+
+  <div class="bridge_slides">
+    <div class="bridge_numbertext">3 / 5</div>
+    <img src="C:\Users\jiang\Desktop\Website\class_engineering\engineering_bridge3.png" alt="Test the relationship between tensile strength and members' width">
+	<div class="caption"><p>Test the relationship between tensile strength and members' width</p></div>
+	</div>
+  
+
+  <div class="bridge_slides">
+    <div class="bridge_numbertext">4 / 5</div>
+    <img src="C:\Users\jiang\Desktop\Website\class_engineering\engineering_bridge4.png" alt="Test the relationship between compression strength and members' length">
+	<div class="caption"><p>Test the relationship between compression strength and members' length</p></div>
+	</div>
+  
+
+ <div class="bridge_slides">
+    <div class="bridge_numbertext">5 / 5</div>
+    <img src="C:\Users\jiang\Desktop\Website\class_engineering\engineering_bridge5.png" alt='Modeling the bridge'>
+	<div class="caption"><p>Modeling the bridge'</p></div>
+  </div>
+
+  <a class="prev" onclick="bridge_plusSlides(-1)">❮</a>
+  <a class="next" onclick="bridge_plusSlides(1)">❯</a>
+
+</div>
+
+<script>
+var bridge_slideIndex = 1;
+bridge_showSlides(slideIndex);
+
+function bridge_plusSlides(n) {
+  bridge_showSlides(slideIndex += n);
+}
+
+function bridge_currentSlide(n) {
+  bridge_showSlides(slideIndex = n);
+}
+
+function bridge_showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("bridge_slides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+
+  slides[slideIndex-1].style.display = "block";
+}
+</script>
+
+		<article>
+			<p><br>&nbsp &nbsp Building a bridge was not a easy thing, but studying one could be 
+			even more intricate! Using all the jonts and members printed by the laser-cutting machine, 
+			my partners and I followed the pattern on the blueprint to make a truss bridge. As we 
+			tested the bridge, it was able to hold 10kg loads at least. However, what was the maximum 
+			weight the truss bridge can hold? What was the maximum weight each member can hold? To 
+			study these questions, we decided to keep adding loads on the bridge until it failed.
+			<br>&nbsp &nbsp When the loads added up to 20kg, finally, our bridge collapsed! After four 
+			experiments, we found it was not accidental that the end posts of the bridges always buckled 
+			first. This demonstrated that the end posts were the weakest member in the truss bridge structure.
+			We were also able to calculate each member's maximum loads using physics.</p>
+		</article>
+
+</div>
+
+</body>
+
+</html>
